@@ -36,8 +36,8 @@ public class BalancedParentheses
 
    private static boolean isBalanced(String line)
    {
-      Stack<Character> stack = new Stack<>(Character.class, line.length());
-      Stack<Character> closingStack = new Stack<>(Character.class, line.length());
+      Stack<Character> stack = new Stack<>(line.length());
+      Stack<Character> closingStack = new Stack<>(line.length());
       for (char ch : line.toCharArray())
       {
          stack.push(ch);
